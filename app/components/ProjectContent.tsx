@@ -14,7 +14,7 @@ function DisplayProject({ project }) {
                 {/* Project Link(s) */}
                 <span className="project-links">
                     {project.pageLink != null && 
-                        <Link href={project.pageLink}>
+                        <Link href={project.pageLink} rel="noopener noreferrer" target="_blank">
                             <Image 
                                 src={link}
                                 alt={project.pageLink}
@@ -23,7 +23,7 @@ function DisplayProject({ project }) {
                             />
                         </Link>
                     }
-                    <Link href={project.github}>
+                    <Link href={project.github} rel="noopener noreferrer" target="_blank">
                         <Image 
                             src={github}
                             alt={project.github}
@@ -36,7 +36,17 @@ function DisplayProject({ project }) {
             {/* Project Description */}
             <div className="project-description">{project.description}</div>
             {/* Project Image? */}
-            
+            {project.image != null && 
+                <div className="project-image">
+                    <Image
+                        src={project.image}
+                        alt={project.name}
+                        // width={project.width}
+                        height={136}
+                        style={{height: '136px', width: 'auto', maxWidth: '100%'}}
+                    />
+                </div>
+            }
             {/* Project Technologies */}
             <div className='project-tech-container'>
             {project.technologies.map((tech, index) => (

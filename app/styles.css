@@ -54,10 +54,6 @@ body {
   font-weight: bold;
 }
 
-a {
-    color: #8888ff;
-}
-
 .bottom-links {
     width: 25%;
     height: 60px;
@@ -93,11 +89,11 @@ a {
 }
 
 .project-content {
-  width: 70%;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 10px;
 }
 
@@ -105,8 +101,8 @@ a {
   font-size: 11px;
   padding: 5px;
   margin-right: 10px;
-  background-color: #444444;
-  border: 1px solid #222222;
+  background-color: rgba(45, 212, 191, 0.1);
+  color: rgb(94 234 212);
   border-radius: 0.25rem;
 }
 
@@ -127,6 +123,14 @@ a {
 
 .project-links {
   display: flex;
-  gap: 8px; /* spacing between icons */
+  gap: 8px;
   align-items: flex-start;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-image {
+  text-align: center;
 }
