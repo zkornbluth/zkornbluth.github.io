@@ -98,17 +98,35 @@ a {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 10px;
 }
 
 .project-tech {
   font-size: 11px;
   padding: 5px;
-  margin: 5px 5px 15px 5px;
+  margin-right: 10px;
   background-color: #444444;
   border: 1px solid #222222;
   border-radius: 0.25rem;
 }
 
-.project-name {
+.project-tech-container {
+  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.project-name {
+  margin-bottom: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-links {
+  display: flex;
+  gap: 8px; /* spacing between icons */
+  align-items: flex-start;
 }
