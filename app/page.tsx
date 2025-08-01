@@ -7,6 +7,7 @@ import './styles.css';
 import email from './assets/email.png';
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
+import ProjectContent from './components/ProjectContent';
 
 function BottomButton({ displayName, clickButton, isActive }) {
   return (
@@ -26,8 +27,8 @@ function BottomLinks() {
         <Image
           src={email}
           alt="Email Logo"
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           className='bottom-link'
         />
       </Link>
@@ -35,8 +36,8 @@ function BottomLinks() {
         <Image
           src={github}
           alt="GitHub Logo"
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           className='bottom-link'
         />
       </Link>
@@ -44,8 +45,8 @@ function BottomLinks() {
         <Image
           src={linkedin}
           alt="LinkedIn Logo"
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           className='bottom-link'
         />
       </Link>
@@ -60,7 +61,7 @@ function PageContent({ lastClicked }) {
     case ButtonOptions.About:
       break;
     default:
-      return <div></div>
+      return <ProjectContent />
   }
 }
 
@@ -72,7 +73,7 @@ enum ButtonOptions {
 }
  
 export default function HomePage() {
-  const [lastClicked, setLastClicked] = useState<ButtonOptions>(ButtonOptions.Other);
+  const [lastClicked, setLastClicked] = useState<ButtonOptions>(ButtonOptions.Home);
 
   useEffect(() => {
     const saved = localStorage.getItem('lastClicked');
@@ -90,11 +91,7 @@ export default function HomePage() {
     <div>
       <h1>Title</h1>
 
-      {/* <div>{lastClicked}</div> */}
-
       <PageContent lastClicked={lastClicked} />
-
-      {/* <BottomLinks /> */}
       
       <div className="bottom-bar">
         <BottomButton 
