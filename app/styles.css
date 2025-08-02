@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #222222;
+    background-color: #0F172A;
     color: white;
 }
 
@@ -16,8 +16,8 @@ body {
 .bottom-button {
     width: 25%;
     height: 60px;
-    color: white;
-    background-color: #333333;
+    color: #F4F4F4;
+    background-color: #64748B;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -38,19 +38,19 @@ body {
   transform: translateY(-1px);
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: #BBBBBB;
+  color: #F4F4F4;
 }
 
 .bottom-button:active {
   background-color: #444444;
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: #BBBBBB;
+  color: #F4F4F4;
   transform: translateY(0);
 }
 
 .bottom-button.active {
-  border-top: 3px solid white;
+  border-top: 3px solid #F4F4F4;
   font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ body {
     width: 25%;
     height: 60px;
     color: white;
-    background-color: #333333;
+    background-color: #64748B;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -82,7 +82,7 @@ body {
 
 .project-display {
   text-align: left;
-  border: 1px solid white;
+  border: 1px solid #64748B;
   border-radius: 0.25rem;
   padding: 10px;
   margin: 10px;
@@ -101,9 +101,10 @@ body {
   font-size: 11px;
   padding: 5px;
   margin-right: 10px;
-  background-color: rgba(45, 212, 191, 0.1);
-  color: rgb(94 234 212);
+  background-color: #0F172A;
+  color: #22D3EE;
   border-radius: 0.25rem;
+  border: 1px solid #64748B;
 }
 
 .project-tech-container {
