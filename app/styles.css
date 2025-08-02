@@ -101,10 +101,10 @@ body {
   font-size: 11px;
   padding: 5px;
   margin-right: 10px;
-  background-color: #0F172A;
+  background-color: #243969;
   color: #22D3EE;
   border-radius: 0.25rem;
-  border: 1px solid #64748B;
+  /* border: 1px solid #64748B; */
 }
 
 .project-tech-container {
