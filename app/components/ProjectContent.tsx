@@ -14,7 +14,7 @@ function DisplayProject({ project }) {
                 {/* Project Link(s) */}
                 <span className="project-links">
                     {project.pageLink != null && 
-                        <Link href={project.pageLink} rel="noopener noreferrer" target="_blank">
+                        <Link href={project.pageLink} rel="noopener noreferrer" target="_blank" title="Open Project">
                             <Image 
                                 src={link}
                                 alt={project.pageLink}
@@ -23,7 +23,7 @@ function DisplayProject({ project }) {
                             />
                         </Link>
                     }
-                    <Link href={project.github} rel="noopener noreferrer" target="_blank">
+                    <Link href={project.github} rel="noopener noreferrer" target="_blank" title="Open GitHub Repository">
                         <Image 
                             src={github}
                             alt={project.github}
