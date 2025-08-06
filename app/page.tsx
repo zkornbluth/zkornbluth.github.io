@@ -8,6 +8,7 @@ import email from './assets/email.png';
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
 import ProjectContent from './components/ProjectContent';
+import AboutContent from './components/AboutContent';
 
 function BottomButton({ displayName, clickButton, isActive }) {
   return (
@@ -23,7 +24,7 @@ function BottomButton({ displayName, clickButton, isActive }) {
 function BottomLinks() {
   return (
     <div className='bottom-links'>
-      <Link href="mailto:zkornbluth2007@gmail.com">
+      <Link href="mailto:zkornbluth2007@gmail.com" title="Send me an email">
         <Image
           src={email}
           alt="Email Logo"
@@ -32,7 +33,7 @@ function BottomLinks() {
           className='bottom-link'
         />
       </Link>
-      <Link href="https://github.com/zkornbluth" rel="noopener noreferrer" target="_blank">
+      <Link href="https://github.com/zkornbluth" rel="noopener noreferrer" target="_blank" title="View my GitHub Profile">
         <Image
           src={github}
           alt="GitHub Logo"
@@ -41,7 +42,7 @@ function BottomLinks() {
           className='bottom-link'
         />
       </Link>
-      <Link href="https://linkedin.com/in/zachary-kornbluth/" rel="noopener noreferrer" target="_blank">
+      <Link href="https://linkedin.com/in/zachary-kornbluth/" rel="noopener noreferrer" target="_blank" title="View my LinkedIn Profile">
         <Image
           src={linkedin}
           alt="LinkedIn Logo"
@@ -59,9 +60,9 @@ function PageContent({ lastClicked }) {
     case ButtonOptions.Home:
       break;
     case ButtonOptions.About:
-      break;
+      return <AboutContent />;
     default:
-      return <ProjectContent />
+      return <ProjectContent />;
   }
 }
 
@@ -88,11 +89,12 @@ export default function HomePage() {
   }
  
   return (
-    <div>
-      <h1>{lastClicked}</h1>
+    <div className="page-container">
+      <div className="page-content">
+        <h1>{lastClicked}</h1>
 
-      <PageContent lastClicked={lastClicked} />
-      
+        <PageContent lastClicked={lastClicked} />
+      </div>
       <div className="bottom-bar">
         <BottomButton 
           displayName={ButtonOptions.Home} 
@@ -109,16 +111,6 @@ export default function HomePage() {
           clickButton={clickButton} 
           isActive={lastClicked === ButtonOptions.Projects} 
         />
-        {/* <BottomButton 
-          displayName={ButtonOptions.Contact} 
-          clickButton={clickButton} 
-          isActive={lastClicked === ButtonOptions.Contact} 
-        /> */}
-        {/* <BottomButton
-          displayName="Test"
-          clickButton={clickButton}
-          isActive={false}
-        /> */}
         <BottomLinks />
       </div>
       

@@ -1,37 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     text-align: center;
     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #0F172A;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-root, .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  padding-bottom: 80px; /* enough to clear the fixed bottom bar */
 }
 
 .bottom-bar {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height: 60px;
-    text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: #64748B;
+  z-index: 10;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .bottom-button {
-    width: 25%;
-    height: 60px;
-    color: #F4F4F4;
-    background-color: #64748B;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    position: relative;
-    transition: all 250ms;
-    user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
+  width: 25%;
+  height: 100%;
+  color: #F4F4F4;
+  background-color: inherit; 
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 250ms;
+  user-select: none;
 }
 
 .bottom-button:hover {
@@ -55,29 +74,22 @@ body {
 }
 
 .bottom-links {
-    width: 25%;
-    height: 60px;
-    color: white;
-    background-color: #64748B;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: center;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
 }
 
 .bottom-link {
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 13px;
-    cursor: pointer;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.bottom-link:hover {
+  transform: scale(1.1);
 }
 
 .project-display {
@@ -135,4 +147,39 @@ body {
 
 .project-image {
   text-align: center;
+}
+
+.about-sidebar {
+  width: 18%;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.workexps-container {
+  width: 40%;
+}
+
+.workexp-company {
+  color: #22D3EE;
+  font-size: .9em;
+}
+
+.workexp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.workexp-des, .workexp-company, .workexp-tech-container {
+  text-align: left;
+}
+
+.resume-link {
+  color: #22D3EE;
 }
