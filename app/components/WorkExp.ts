@@ -15,7 +15,7 @@ export class WorkExp {
 }
 
 const workExps: WorkExp[] = [
-    new WorkExp("Freelance AI Consultant", "Horizon Media", "2025-present", "Automating company analysis through ChatGPT and Gemini", ["LLMs"]),
+    new WorkExp("Freelance AI Consultant", "Horizon Media", "2025-present", "Automating company analysis through ChatGPT and Gemini", ["AI", "LLMs"]),
     new WorkExp("Software Developer", "Epic Systems", "2021-2023", "Developed new features and fixed bugs for orthopedics and rheumatology practices", ["React", "TypeScript", "C#", "GT.M/Cache"]),
     new WorkExp("Software Development Engineer Intern", "Amazon", "Summer 2020", "Designed and developed command-line package to extract Python code from Jupyter notebook and ship to review", ["Python", "Jupyter"]),
     new WorkExp("Software Development Engineer Intern", "Amazon", "Summer 2019", "Created set of APIs to act as data access layer between database and web service", ["Java", "APIs"]),

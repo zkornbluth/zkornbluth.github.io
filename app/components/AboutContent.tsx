@@ -28,7 +28,7 @@ export default function AboutContent() {
     return (
         <div className="about-container">
             <div className="about-sidebar">
-                {/* <h2>Zachary Kornbluth</h2> */}
+                <h2>Zachary Kornbluth</h2>
                 <Image
                     src={headshot}
                     alt="Headshot"
@@ -38,7 +38,7 @@ export default function AboutContent() {
                 <p>
                     I'm a software developer with 2+ years experience in full stack development. 
                     I'm proficient in Python, TypeScript, and React. 
-                    I posess a bachelor's degree in Computer Science from Northwestern University with a minor in Data Science.
+                    I possess a bachelor's degree in Computer Science from Northwestern University with a minor in Data Science.
                 </p>
                 <Link className="resume-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" title="View my full resume">
                     View my resume

@@ -57,8 +57,6 @@ function BottomLinks() {
 
 function PageContent({ lastClicked }) {
   switch (lastClicked) {
-    case ButtonOptions.Home:
-      break;
     case ButtonOptions.About:
       return <AboutContent />;
     default:
@@ -67,14 +65,13 @@ function PageContent({ lastClicked }) {
 }
 
 enum ButtonOptions {
-  Home = "Home",
-  About = "About",
+  About = "About Me",
   Projects = "Projects",
   Other = ""
 }
  
 export default function HomePage() {
-  const [lastClicked, setLastClicked] = useState<ButtonOptions>(ButtonOptions.Home);
+  const [lastClicked, setLastClicked] = useState<ButtonOptions>(ButtonOptions.About);
 
   useEffect(() => {
     const saved = localStorage.getItem('lastClicked');
@@ -96,11 +93,6 @@ export default function HomePage() {
         <PageContent lastClicked={lastClicked} />
       </div>
       <div className="bottom-bar">
-        <BottomButton 
-          displayName={ButtonOptions.Home} 
-          clickButton={clickButton} 
-          isActive={lastClicked === ButtonOptions.Home} 
-        />
         <BottomButton 
           displayName={ButtonOptions.About} 
           clickButton={clickButton} 
