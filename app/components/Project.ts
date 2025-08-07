@@ -34,7 +34,7 @@ const projects: Project[] = [
     new Project("Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
     new Project("To Do Manager", ["React", "TypeScript", "Next.js"], "Track your tasks with easy editing", "https://github.com/zkornbluth/todo-manager", "https://zkornbluth.github.io/todo-manager"),
     new Project("File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", "https://github.com/zkornbluth/FileOrganizer"),
-    new Project("Tkinter Weather Widget", ["Python", "tkinter"], "View real-time weather data by location", "https://github.com/zkornbluth/weather_app")
+    new Project("Weather Widget", ["Python", "tkinter"], "View real-time weather data by location", "https://github.com/zkornbluth/weather_app")
 ];
 
 projects[0].setImage(wheeloffortune);
