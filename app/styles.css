@@ -39,7 +39,7 @@ body {
 }
 
 .bottom-button {
-  width: 37.5%;
+  flex: 3;
   height: 100%;
   color: #F4F4F4;
   background-color: inherit; 
@@ -74,16 +74,16 @@ body {
 }
 
 .bottom-links {
-  width: 25%;
+  flex: 2;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: inherit;
+  gap: 10px;
 }
 
 .bottom-link {
-  margin: 0 30px;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -116,7 +116,6 @@ body {
   background-color: #243969;
   color: #22D3EE;
   border-radius: 0.25rem;
-  /* border: 1px solid #64748B; */
 }
 
 .project-tech-container {
@@ -187,4 +186,32 @@ body {
 
 .workexp-des {
   margin-bottom: 16px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1100px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center; /* center the sidebar and workexps when stacked */
+    gap: 40px;
+  }
+
+  .about-sidebar,
+  .workexps-container {
+    width: 90%;
+    margin-left: 0; /* remove desktop left margin */
+  }
+
+  .about-sidebar {
+    text-align: center; /* optional: center text/headshot on mobile */
+  }
+
+  .workexps-container {
+    text-align: left; /* keep job descriptions left-aligned */
+  }
+
+  .about-sidebar p {
+    max-width: 400px; /* keeps lines from being too long */
+    margin: 20px auto 0; 
+  }
 }
