@@ -105,7 +105,7 @@ body {
   text-align: center;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   padding-bottom: 10px;
 }
 
@@ -159,6 +159,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 100px;
+  justify-content: center;
 }
 
 .workexps-container {
