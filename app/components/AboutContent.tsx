@@ -38,7 +38,7 @@ export default function AboutContent() {
                 <p>
                     I'm a software developer with 2+ years experience in full stack development. 
                     I'm proficient in Python, TypeScript, and React. 
-                    I possess a bachelor's degree in Computer Science from Northwestern University with a minor in Data Science.
+                    I completed my bachelor's degree in Computer Science from Northwestern University with a minor in Data Science.
                 </p>
                 <Link className="resume-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" title="View my full resume">
                     View my resume
