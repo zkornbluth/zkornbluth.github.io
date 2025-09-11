@@ -35,7 +35,7 @@ function DisplayProject({ project }) {
             </div>
             {/* Project Description */}
             <div className="project-description">{project.description}</div>
-            {/* Project Image? */}
+            {/* Project Image */}
             {project.image != null && 
                 <div className="project-image">
                     <Image
@@ -58,10 +58,26 @@ function DisplayProject({ project }) {
 }
 
 export default function ProjectContent() {
+    const authoredProjects = projects.filter(project => !project.contributor);
+    const contributedProjects = projects.filter(project => project.contributor);
+
     return (
         <div className="project-content">
-            {projects.map((project, index) => (
-                <DisplayProject key={index} project={project} />
+            {/* My Projects (header is handled in page) */}
+            {authoredProjects.map((project, index) => (
+                <DisplayProject key={`authored-${index}`} project={project} />
+            ))}
+
+            {/* Section Divider */}
+            {contributedProjects.length > 0 && (
+                <div className="section-divider">
+                    <h2>Projects I've Contributed To</h2>
+                </div>
+            )}
+
+            {/* Contributed Projects */}
+            {contributedProjects.map((project, index) => (
+                <DisplayProject key={`contrib-${index}`} project={project} />
             ))}
         </div>
     )

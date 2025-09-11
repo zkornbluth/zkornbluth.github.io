@@ -66,7 +66,7 @@ function PageContent({ lastClicked }) {
 
 enum ButtonOptions {
   About = "About Me",
-  Projects = "Projects",
+  Projects = "My Projects",
   Other = ""
 }
  
