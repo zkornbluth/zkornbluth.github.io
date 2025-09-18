@@ -7,6 +7,7 @@ import fileorganizer from '../assets/fileorganizer.png';
 import jobsearcher from '../assets/jobsearcher.png';
 import pitching from '../assets/pitching.png';
 import congress from '../assets/congress.png';
+import fantrax from '../assets/fantrax.png';
 
 export class Project {
     contributor: boolean;
@@ -33,6 +34,7 @@ const projects: Project[] = [
     new Project(false, "Menu Bar Password Generator", ["Swift"], "Generate random passwords with rules", passwordgenerator, "https://github.com/zkornbluth/PasswordGenerator"),
     new Project(false, "Job Posting Filtering Tool", ["Python", "pandas"], "Scrape Indeed & LinkedIn with filters", jobsearcher, "https://github.com/zkornbluth/job_searcher"),
     new Project(false, "Cy Young Pitching Dashboard", ["Tableau", "Python", "HTML"], "Analyze MLB pitcher performance", pitching, "https://github.com/zkornbluth/pitching_dashboard", "https://zkornbluth.github.io/pitching_dashboard"),
+    new Project(false, "Fantrax Baseball Contract Chart", ["React", "Selenium", "TypeScript", "Next.js"], "Plan your offseason moves", fantrax, "https://github.com/zkornbluth/fantrax-contract-chart", "https://zkornbluth.github.io/fantrax-contract-chart"),
     new Project(false, "To Do Manager", ["React", "TypeScript", "Next.js"], "Track your tasks with easy editing", todos, "https://github.com/zkornbluth/todo-manager", "https://zkornbluth.github.io/todo-manager"),
     new Project(false, "File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", fileorganizer, "https://github.com/zkornbluth/FileOrganizer"),
     new Project(false, "Weather Widget", ["Python", "tkinter"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
