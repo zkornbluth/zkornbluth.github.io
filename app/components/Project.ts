@@ -8,6 +8,7 @@ import jobsearcher from '../assets/jobsearcher.png';
 import pitching from '../assets/pitching.png';
 import congress from '../assets/congress.png';
 import fantrax from '../assets/fantrax.png';
+import livescore from '../assets/livescore.png';
 
 export class Project {
     contributor: boolean;
@@ -31,13 +32,14 @@ export class Project {
 
 const projects: Project[] = [
     new Project(false, "Wheel of Fortune Dashboard", ["R", "Shiny"], "Improve your Bonus Round puzzle solving", wheeloffortune, "https://github.com/zkornbluth/WheelOfFortune", "http://zkornbluth.github.io/WheelOfFortune"),
-    new Project(false, "Menu Bar Password Generator", ["Swift"], "Generate random passwords with rules", passwordgenerator, "https://github.com/zkornbluth/PasswordGenerator"),
+    new Project(false, "Menu Bar Live Sports Scoreboard", ["Swift", "APIs"], "Follow MLB, NFL, NHL, NBA, and EPL scores", livescore, "https://github.com/zkornbluth/LiveSports-Menu"),
     new Project(false, "Job Posting Filtering Tool", ["Python", "pandas"], "Scrape Indeed & LinkedIn with filters", jobsearcher, "https://github.com/zkornbluth/job_searcher"),
     new Project(false, "Cy Young Pitching Dashboard", ["Tableau", "Python", "HTML"], "Analyze MLB pitcher performance", pitching, "https://github.com/zkornbluth/pitching_dashboard", "https://zkornbluth.github.io/pitching_dashboard"),
     new Project(false, "Fantrax Baseball Contract Chart", ["React", "Selenium", "TypeScript", "Next.js"], "Plan your offseason moves", fantrax, "https://github.com/zkornbluth/fantrax-contract-chart", "https://zkornbluth.github.io/fantrax-contract-chart"),
     new Project(false, "To Do Manager", ["React", "TypeScript", "Next.js"], "Track your tasks with easy editing", todos, "https://github.com/zkornbluth/todo-manager", "https://zkornbluth.github.io/todo-manager"),
+    new Project(false, "Password Generator Utility", ["Swift"], "Generate random passwords with rules", passwordgenerator, "https://github.com/zkornbluth/PasswordGenerator"),
     new Project(false, "File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", fileorganizer, "https://github.com/zkornbluth/FileOrganizer"),
-    new Project(false, "Weather Widget", ["Python", "tkinter"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
+    new Project(false, "Weather Widget", ["Python", "tkinter", "APIs"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
     new Project(false, "Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", typing, "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
     new Project(true, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators")
 ];
