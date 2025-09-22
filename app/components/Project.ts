@@ -9,6 +9,7 @@ import pitching from '../assets/pitching.png';
 import congress from '../assets/congress.png';
 import fantrax from '../assets/fantrax.png';
 import livescore from '../assets/livescore.png';
+import teamlogos from '../assets/teamlogos.png';
 
 export class Project {
     contributor: boolean;
@@ -41,7 +42,8 @@ const projects: Project[] = [
     new Project(false, "File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", fileorganizer, "https://github.com/zkornbluth/FileOrganizer"),
     new Project(false, "Weather Widget", ["Python", "tkinter", "APIs"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
     new Project(false, "Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", typing, "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
-    new Project(true, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators")
+    new Project(true, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators"),
+    new Project(true, "R Team Colors Package", ["R", "Git"], "Added Seattle Kraken, updated rebrands", teamlogos, "https://github.com/beanumber/teamcolors")
 ];
 
 export {projects};
