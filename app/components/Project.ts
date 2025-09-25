@@ -10,9 +10,18 @@ import congress from '../assets/congress.png';
 import fantrax from '../assets/fantrax.png';
 import livescore from '../assets/livescore.png';
 import teamlogos from '../assets/teamlogos.png';
+import boxscore from '../assets/boxscore.png';
+import plotly from '../assets/plotly.png';
+import asdict from '../assets/asdict.png';
+
+export enum ProjectType {
+    Mine,
+    Contributed,
+    InReview
+}
 
 export class Project {
-    contributor: boolean;
+    contributor: ProjectType;
     name: string;
     technologies: string[];
     github: string;
@@ -20,7 +29,7 @@ export class Project {
     description: string;
     image: any | null;
 
-    constructor(contributor: boolean, name: string, technologies: string[], description: string, image: any, github: string, pageLink?: string) {
+    constructor(contributor: ProjectType, name: string, technologies: string[], description: string, image: any, github: string, pageLink?: string) {
         this.contributor = contributor;
         this.name = name;
         this.technologies = technologies;
@@ -32,18 +41,21 @@ export class Project {
 }
 
 const projects: Project[] = [
-    new Project(false, "Wheel of Fortune Dashboard", ["R", "Shiny"], "Improve your Bonus Round puzzle solving", wheeloffortune, "https://github.com/zkornbluth/WheelOfFortune", "http://zkornbluth.github.io/WheelOfFortune"),
-    new Project(false, "Menu Bar Live Sports Scoreboard", ["Swift", "APIs"], "Follow MLB, NFL, NHL, NBA, and EPL scores", livescore, "https://github.com/zkornbluth/LiveSports-Menu"),
-    new Project(false, "Job Posting Filtering Tool", ["Python", "pandas"], "Scrape Indeed & LinkedIn with filters", jobsearcher, "https://github.com/zkornbluth/job_searcher"),
-    new Project(false, "Cy Young Pitching Dashboard", ["Tableau", "Python", "HTML"], "Analyze MLB pitcher performance", pitching, "https://github.com/zkornbluth/pitching_dashboard", "https://zkornbluth.github.io/pitching_dashboard"),
-    new Project(false, "Fantrax Baseball Contract Chart", ["React", "Selenium", "TypeScript", "Next.js"], "Plan your offseason moves", fantrax, "https://github.com/zkornbluth/fantrax-contract-chart", "https://zkornbluth.github.io/fantrax-contract-chart"),
-    new Project(false, "To Do Manager", ["React", "TypeScript", "Next.js"], "Track your tasks with easy editing", todos, "https://github.com/zkornbluth/todo-manager", "https://zkornbluth.github.io/todo-manager"),
-    new Project(false, "Password Generator Utility", ["Swift"], "Generate random passwords with rules", passwordgenerator, "https://github.com/zkornbluth/PasswordGenerator"),
-    new Project(false, "File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", fileorganizer, "https://github.com/zkornbluth/FileOrganizer"),
-    new Project(false, "Weather Widget", ["Python", "tkinter", "APIs"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
-    new Project(false, "Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", typing, "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
-    new Project(true, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators"),
-    new Project(true, "R Team Colors Package", ["R", "Git"], "Added Seattle Kraken, coded rebrands", teamlogos, "https://github.com/beanumber/teamcolors")
+    new Project(ProjectType.Mine, "Wheel of Fortune Dashboard", ["R", "Shiny"], "Improve your Bonus Round puzzle solving", wheeloffortune, "https://github.com/zkornbluth/WheelOfFortune", "http://zkornbluth.github.io/WheelOfFortune"),
+    new Project(ProjectType.Mine, "Menu Bar Live Sports Scoreboard", ["Swift", "APIs"], "Follow MLB, NFL, NHL, NBA, and EPL scores", livescore, "https://github.com/zkornbluth/LiveSports-Menu"),
+    new Project(ProjectType.Mine, "Job Posting Filtering Tool", ["Python", "pandas"], "Scrape Indeed & LinkedIn with filters", jobsearcher, "https://github.com/zkornbluth/job_searcher"),
+    new Project(ProjectType.Mine, "Cy Young Pitching Dashboard", ["Tableau", "Python", "HTML"], "Analyze MLB pitcher performance", pitching, "https://github.com/zkornbluth/pitching_dashboard", "https://zkornbluth.github.io/pitching_dashboard"),
+    new Project(ProjectType.Mine, "Fantrax Baseball Contract Chart", ["React", "Selenium", "TypeScript", "Next.js"], "Plan your offseason moves", fantrax, "https://github.com/zkornbluth/fantrax-contract-chart", "https://zkornbluth.github.io/fantrax-contract-chart"),
+    new Project(ProjectType.Mine, "To Do Manager", ["React", "TypeScript", "Next.js"], "Track your tasks with easy editing", todos, "https://github.com/zkornbluth/todo-manager", "https://zkornbluth.github.io/todo-manager"),
+    new Project(ProjectType.Mine, "Password Generator Utility", ["Swift"], "Generate random passwords with rules", passwordgenerator, "https://github.com/zkornbluth/PasswordGenerator"),
+    new Project(ProjectType.Mine, "File Organizer", ["Java", "JavaFX"], "Sort files into folders by extension", fileorganizer, "https://github.com/zkornbluth/FileOrganizer"),
+    new Project(ProjectType.Mine, "Weather Widget", ["Python", "tkinter", "APIs"], "View real-time weather data by location", weather, "https://github.com/zkornbluth/weather_app"),
+    new Project(ProjectType.Mine, "Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", typing, "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
+    new Project(ProjectType.Contributed, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators"),
+    new Project(ProjectType.Contributed, "R Team Colors Package", ["R", "Git"], "Added Seattle Kraken, coded rebrands", teamlogos, "https://github.com/beanumber/teamcolors"),
+    new Project(ProjectType.InReview, "MLB Stats API Wrapper", ["Python", "APIs", "Git"], "Added stacked version of boxscore", boxscore, "https://github.com/toddrob99/MLB-StatsAPI"),
+    new Project(ProjectType.InReview, "Baseball Scorecard Generator", ["Python", "Git"], "Fixed broken class _asdict function", asdict, "https://github.com/benjamincrom/baseball"),
+    new Project(ProjectType.InReview, "Plotly Example Datasets", ["Markdown", "Git"], "Updated broken README links", plotly, "https://github.com/plotly/datasets")
 ];
 
 export {projects};
