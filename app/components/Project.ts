@@ -42,7 +42,7 @@ export class Project {
 
 const projects: Project[] = [
     new Project(ProjectType.Mine, "Wheel of Fortune Dashboard", ["R", "Shiny"], "Improve your Bonus Round puzzle solving", wheeloffortune, "https://github.com/zkornbluth/WheelOfFortune", "http://zkornbluth.github.io/WheelOfFortune"),
-    new Project(ProjectType.Mine, "Menu Bar Live Sports Scoreboard", ["Swift", "APIs"], "Follow MLB, NFL, NHL, NBA, and EPL scores", livescore, "https://github.com/zkornbluth/LiveSports-Menu"),
+    new Project(ProjectType.Mine, "Menu Bar Live Sports Scoreboard", ["Swift", "APIs"], "Follow NFL, NHL, NBA, MLB, and EPL scores", livescore, "https://github.com/zkornbluth/LiveSports-Menu"),
     new Project(ProjectType.Mine, "Job Posting Filtering Tool", ["Python", "pandas"], "Scrape Indeed & LinkedIn with filters", jobsearcher, "https://github.com/zkornbluth/job_searcher"),
     new Project(ProjectType.Mine, "Cy Young Pitching Dashboard", ["Tableau", "Python", "HTML"], "Analyze MLB pitcher performance", pitching, "https://github.com/zkornbluth/pitching_dashboard", "https://zkornbluth.github.io/pitching_dashboard"),
     new Project(ProjectType.Mine, "Fantrax Baseball Contract Chart", ["React", "Selenium", "TypeScript", "Next.js"], "Plan your offseason moves", fantrax, "https://github.com/zkornbluth/fantrax-contract-chart", "https://zkornbluth.github.io/fantrax-contract-chart"),
