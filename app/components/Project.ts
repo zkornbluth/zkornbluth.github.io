@@ -13,6 +13,7 @@ import teamlogos from '../assets/teamlogos.png';
 import boxscore from '../assets/boxscore.png';
 import plotly from '../assets/plotly.png';
 import asdict from '../assets/asdict.png';
+import gtrcof from '../assets/gtr-cof.png';
 
 export enum ProjectType {
     Mine,
@@ -54,6 +55,7 @@ const projects: Project[] = [
     new Project(ProjectType.Contributed, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators"),
     new Project(ProjectType.Contributed, "R Team Colors Package", ["R", "Git"], "Added Seattle Kraken, coded rebrands", teamlogos, "https://github.com/beanumber/teamcolors"),
     new Project(ProjectType.InReview, "MLB Stats API Wrapper", ["Python", "APIs", "Git"], "Added stacked version of boxscore", boxscore, "https://github.com/zkornbluth/MLB-StatsAPI"),
+    new Project(ProjectType.InReview, "Guitar Music Theory Dashboard", ["JavaScript", "HTML/CSS", "Git"], "Moved tuning selection to modal", gtrcof, "https://github.com/zkornbluth/gtr-cof"),
     new Project(ProjectType.InReview, "Baseball Scorecard Generator", ["Python", "Git"], "Fixed broken class _asdict function", asdict, "https://github.com/zkornbluth/baseball"),
     new Project(ProjectType.InReview, "Plotly Example Datasets", ["Markdown", "Git"], "Updated broken README links", plotly, "https://github.com/zkornbluth/datasets")
 ];
