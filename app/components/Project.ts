@@ -14,6 +14,7 @@ import boxscore from '../assets/boxscore.png';
 import plotly from '../assets/plotly.png';
 import asdict from '../assets/asdict.png';
 import gtrcof from '../assets/gtr-cof.png';
+import dedup from '../assets/dedup.png';
 
 export enum ProjectType {
     Mine,
@@ -54,10 +55,11 @@ const projects: Project[] = [
     new Project(ProjectType.Mine, "Typing Speed Test", ["React", "TypeScript", "Next.js"], "Measure your words per minute & accuracy", typing, "https://github.com/zkornbluth/typing-test", "https://zkornbluth.github.io/typing-test"),
     new Project(ProjectType.Contributed, "Public US Congress Database", ["YAML", "Git"], "Fixed legislator IDs, refreshed leadership info", congress, "https://github.com/unitedstates/congress-legislators"),
     new Project(ProjectType.Contributed, "R Team Colors Package", ["R", "Git"], "Added Seattle Kraken, coded rebrands", teamlogos, "https://github.com/beanumber/teamcolors"),
-    new Project(ProjectType.InReview, "MLB Stats API Wrapper", ["Python", "APIs", "Git"], "Added stacked version of boxscore", boxscore, "https://github.com/zkornbluth/MLB-StatsAPI"),
     new Project(ProjectType.InReview, "Guitar Music Theory Dashboard", ["JavaScript", "HTML/CSS", "Git"], "Modified tuning selection UI", gtrcof, "https://github.com/zkornbluth/gtr-cof"),
     new Project(ProjectType.InReview, "Baseball Scorecard Generator", ["Python", "Git"], "Fixed broken class _asdict function", asdict, "https://github.com/zkornbluth/baseball"),
-    new Project(ProjectType.InReview, "Plotly Example Datasets", ["Markdown", "Git"], "Updated broken README links", plotly, "https://github.com/zkornbluth/datasets")
+    new Project(ProjectType.InReview, "Spotify Playlist Deduplicator", ["TypeScript", "React", "Git"], "Improved song matching process", dedup, "https://github.com/zkornbluth/spotify-dedup"),
+    new Project(ProjectType.InReview, "Plotly Example Datasets", ["Markdown", "Git"], "Updated broken README links", plotly, "https://github.com/zkornbluth/datasets"),
+    new Project(ProjectType.InReview, "MLB Stats API Wrapper", ["Python", "APIs", "Git"], "Added stacked version of boxscore", boxscore, "https://github.com/zkornbluth/MLB-StatsAPI")
 ];
 
 export {projects};
