@@ -15,6 +15,7 @@ import plotly from '../assets/plotly.png';
 import asdict from '../assets/asdict.png';
 import gtrcof from '../assets/gtr-cof.png';
 import dedup from '../assets/dedup.png';
+import maptoposter from '../assets/maptoposter.png';
 
 export enum ProjectType {
     Mine,
@@ -49,5 +50,6 @@ export const projects: Project[] = [
     { contributor: ProjectType.InReview, name: "Baseball Scorecard Generator", technologies: ["Python", "Git"], description: "Fixed broken class _asdict function", image: asdict, github: "https://github.com/zkornbluth/baseball" },
     { contributor: ProjectType.InReview, name: "Spotify Playlist Deduplicator", technologies: ["TypeScript", "React", "Git"], description: "Improved song matching process", image: dedup, github: "https://github.com/zkornbluth/spotify-dedup" },
     { contributor: ProjectType.InReview, name: "Plotly Example Datasets", technologies: ["Markdown", "Git"], description: "Updated broken README links", image: plotly, github: "https://github.com/zkornbluth/datasets" },
-    { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" }
+    { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" },
+    { contributor: ProjectType.InReview, name: "Map Poster Generator", technologies: ["Python", "Git"], description: "Fixed missing bays and straits", image: maptoposter, github: "https://github.com/zkornbluth/maptoposter" }
 ];
