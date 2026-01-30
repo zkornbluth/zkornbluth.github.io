@@ -51,5 +51,5 @@ export const projects: Project[] = [
     { contributor: ProjectType.InReview, name: "Spotify Playlist Deduplicator", technologies: ["TypeScript", "React", "Git"], description: "Improved song matching process", image: dedup, github: "https://github.com/zkornbluth/spotify-dedup" },
     { contributor: ProjectType.InReview, name: "Plotly Example Datasets", technologies: ["Markdown", "Git"], description: "Updated broken README links", image: plotly, github: "https://github.com/zkornbluth/datasets" },
     { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" },
-    { contributor: ProjectType.InReview, name: "Map Poster Generator", technologies: ["Python", "Git"], description: "Fixed missing bays and straits", image: maptoposter, github: "https://github.com/zkornbluth/maptoposter" }
+    { contributor: ProjectType.Contributed, name: "Map Poster Generator", technologies: ["Python", "Git"], description: "Fixed missing bays and straits", image: maptoposter, github: "https://github.com/zkornbluth/maptoposter" }
 ];
