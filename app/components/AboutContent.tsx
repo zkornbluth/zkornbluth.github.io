@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import headshot from '../assets/headshot.jpeg';
 import tableau_desktop_foundations from '../assets/tableau-desktop-foundations.png';
+import cloud_digital_leader from '../assets/cloud-digital-leader.png';
+import CertificationBadge from './CertificationBadge';
 import { workExps } from '../models/WorkExp';
 import DisplayWorkExp from './DisplayWorkExp';
 
@@ -26,13 +28,10 @@ export default function AboutContent() {
                     View my resume
                 </Link>
                 <br></br>
-                <Image
-                    src={tableau_desktop_foundations}
-                    alt="Salesforce Certified Tableau Desktop Foundations"
-                    width={50}
-                    height={50}
-                    style={{marginTop: 20}}
-                />
+                <span>
+                    <CertificationBadge certification={tableau_desktop_foundations} alt="Salesforce Certified Tableau Desktop Foundations" />
+                    <CertificationBadge certification={cloud_digital_leader} alt="Google Cloud Digital Leader" />
+                </span>
             </div>
             <div className="workexps-container">
                 <h3>Experience</h3>
