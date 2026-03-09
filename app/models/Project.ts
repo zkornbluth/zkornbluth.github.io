@@ -16,6 +16,7 @@ import asdict from '../assets/asdict.png';
 import gtrcof from '../assets/gtr-cof.png';
 import dedup from '../assets/dedup.png';
 import maptoposter from '../assets/maptoposter.png';
+import activity from '../assets/activity.png';
 
 export enum ProjectType {
     Mine,
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     { contributor: ProjectType.Mine, name: "To Do Manager", technologies: ["React", "TypeScript", "Next.js"], description: "Track your tasks with easy editing", image: todos, github: "https://github.com/zkornbluth/todo-manager", pageLink: "https://zkornbluth.github.io/todo-manager" },
     { contributor: ProjectType.Mine, name: "Password Generator Utility", technologies: ["Swift"], description: "Generate random passwords with rules", image: passwordgenerator, github: "https://github.com/zkornbluth/PasswordGenerator" },
     { contributor: ProjectType.Mine, name: "File Organizer", technologies: ["Java", "JavaFX"], description: "Sort files into folders by extension", image: fileorganizer, github: "https://github.com/zkornbluth/FileOrganizer" },
+    { contributor: ProjectType.Mine, name: "Strava Menu Bar Widget", technologies: ["Swift", "Strava", "Cursor"], description: "View your most recent workout", image: activity, github: "https://github.com/zkornbluth/ActivityBar" },
     { contributor: ProjectType.Mine, name: "Weather Widget", technologies: ["Python", "tkinter", "APIs"], description: "View real-time weather data by location", image: weather, github: "https://github.com/zkornbluth/weather_app" },
     { contributor: ProjectType.Mine, name: "Typing Speed Test", technologies: ["React", "TypeScript", "Next.js"], description: "Measure your words per minute & accuracy", image: typing, github: "https://github.com/zkornbluth/typing-test", pageLink: "https://zkornbluth.github.io/typing-test" },
     { contributor: ProjectType.Contributed, name: "Map Poster Generator", technologies: ["Python", "Git"], description: "Fixed missing bays and straits", image: maptoposter, github: "https://github.com/originalankur/maptoposter" },
