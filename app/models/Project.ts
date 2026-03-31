@@ -12,7 +12,6 @@ import livescore from '../assets/livescore.png';
 import teamlogos from '../assets/teamlogos.png';
 import boxscore from '../assets/boxscore.png';
 import plotly from '../assets/plotly.png';
-import asdict from '../assets/asdict.png';
 import gtrcof from '../assets/gtr-cof.png';
 import dedup from '../assets/dedup.png';
 import maptoposter from '../assets/maptoposter.png';
@@ -50,7 +49,6 @@ export const projects: Project[] = [
     { contributor: ProjectType.Contributed, name: "Public US Congress Database", technologies: ["YAML", "Git"], description: "Fixed legislator IDs, refreshed leadership info", image: congress, github: "https://github.com/unitedstates/congress-legislators" },
     { contributor: ProjectType.Contributed, name: "R Team Colors Package", technologies: ["R", "Git"], description: "Added Seattle Kraken, coded rebrands", image: teamlogos, github: "https://github.com/beanumber/teamcolors" },
     { contributor: ProjectType.InReview, name: "Guitar Music Theory Dashboard", technologies: ["JavaScript", "HTML/CSS", "Git"], description: "Modified tuning selection UI", image: gtrcof, github: "https://github.com/zkornbluth/gtr-cof" },
-    { contributor: ProjectType.InReview, name: "Baseball Scorecard Generator", technologies: ["Python", "Git"], description: "Fixed broken class _asdict function", image: asdict, github: "https://github.com/zkornbluth/baseball" },
     { contributor: ProjectType.InReview, name: "Spotify Playlist Deduplicator", technologies: ["TypeScript", "React", "Git"], description: "Improved song matching process", image: dedup, github: "https://github.com/zkornbluth/spotify-dedup" },
     { contributor: ProjectType.InReview, name: "Plotly Example Datasets", technologies: ["Markdown", "Git"], description: "Updated broken README links", image: plotly, github: "https://github.com/zkornbluth/datasets" },
     { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" }
