@@ -15,6 +15,7 @@ import plotly from '../assets/plotly.png';
 import dedup from '../assets/dedup.png';
 import maptoposter from '../assets/maptoposter.png';
 import activity from '../assets/activity.png';
+import vizro from '../assets/vizro.png';
 
 export enum ProjectType {
     Mine,
@@ -49,5 +50,6 @@ export const projects: Project[] = [
     { contributor: ProjectType.Contributed, name: "R Team Colors Package", technologies: ["R", "Git"], description: "Added Seattle Kraken, coded rebrands", image: teamlogos, github: "https://github.com/beanumber/teamcolors" },
     { contributor: ProjectType.InReview, name: "Spotify Playlist Deduplicator", technologies: ["TypeScript", "React", "Git"], description: "Improved song matching process", image: dedup, github: "https://github.com/zkornbluth/spotify-dedup" },
     { contributor: ProjectType.InReview, name: "Plotly Example Datasets", technologies: ["Markdown", "Git"], description: "Updated broken README links", image: plotly, github: "https://github.com/zkornbluth/datasets" },
-    { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" }
+    { contributor: ProjectType.InReview, name: "MLB Stats API Wrapper", technologies: ["Python", "APIs", "Git"], description: "Added stacked version of boxscore", image: boxscore, github: "https://github.com/zkornbluth/MLB-StatsAPI" },
+    { contributor: ProjectType.InReview, name: "Vizro Toolkit", technologies: ["Python","Git"], description: "Corrected comments to match style guide", image: vizro, github: "https://github.com/zkornbluth/vizro" }
 ];
