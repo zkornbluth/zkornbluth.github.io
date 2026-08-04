@@ -4,6 +4,8 @@ import Link from 'next/link';
 import headshot from '../assets/headshot.jpeg';
 import tableau_desktop_foundations from '../assets/tableau-desktop-foundations.png';
 import cloud_digital_leader from '../assets/cloud-digital-leader.png';
+import huggingface from '../assets/huggingface.png';
+import harvardonline from '../assets/harvardonline.jpg'
 import CertificationBadge from './CertificationBadge';
 import { workExps } from '../models/WorkExp';
 import DisplayWorkExp from './DisplayWorkExp';
@@ -21,7 +23,7 @@ export default function AboutContent() {
                 />
                 <p>
                     I'm a software developer with 2+ years experience in full stack development. 
-                    I'm proficient in Python, TypeScript, and React. 
+                    I'm proficient in Python, JavaScript/TypeScript, and React. 
                     I completed my bachelor's degree in Computer Science at Northwestern University with a minor in Data Science.
                 </p>
                 <Link className="resume-link" href="/resume.pdf" target="_blank" rel="noopener noreferrer" title="View my full resume">
@@ -31,6 +33,8 @@ export default function AboutContent() {
                 <span>
                     <CertificationBadge certification={tableau_desktop_foundations} alt="Salesforce Certified Tableau Desktop Foundations" link="https://trailheadacademy.salesforce.com/certificate/exam-tableau-desktop-found---Analytics-101" />
                     <CertificationBadge certification={cloud_digital_leader} alt="Google Cloud Digital Leader" link="https://www.credly.com/badges/5f5c36e9-e1d0-4b42-9eac-3c01a5f54488/public_url/" />
+                    <CertificationBadge certification={huggingface} alt="Hugging Face AI Agents Fundamentals" link="https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/zkornbluth/2026-06-19.png" />
+                    <CertificationBadge certification={harvardonline} alt="Harvard Online Agentic AI Foundations: Business Risks and Applications" link="https://cecredential-validation.tlt.harvard.edu/" />
                 </span>
             </div>
             <div className="workexps-container">
