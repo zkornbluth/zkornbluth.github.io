@@ -7,6 +7,7 @@ interface WorkExp {
 }
 
 export const workExps: WorkExp[] = [
+    { title: "Software Engineer", company: "Arch", years: "2026-present", description: "Building and shipping features across customer-facing and internal tools", technologies: ["JavaScript", "React.js", "TypeScript", "Cursor AI"] },
     { title: "Freelance AI Consultant", company: "Horizon Media", years: "2025", description: "Automated company analysis through ChatGPT and Gemini", technologies: ["AI", "LLMs"] },
     { title: "Software Developer", company: "Epic Systems", years: "2021-2023", description: "Developed new features and fixed bugs for orthopedics and rheumatology practices", technologies: ["JavaScript", "React.js", "TypeScript", "C#", "GT.M/Cache"] },
     { title: "Software Development Engineer Intern", company: "Amazon", years: "Summer 2020", description: "Designed and developed command-line package to extract Python code from Jupyter notebook and ship to review", technologies: ["Python", "Jupyter"] },
